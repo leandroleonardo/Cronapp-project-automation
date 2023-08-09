@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="src/main/webapp/views/logged/components.view.html" functionCategory="" library="false" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Bloco" ruleName="Bloco" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="482.9000000000001" scrolly="-1" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="m{]|!U.,2}E3s^~MuBbS" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-442" y="8">
+    <field customattributes="" name="NAME">validateCalendar</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="m{]|!U.,2}E3s^~MuBbS" id="B]$afJ0FBh%_J?-^0g}-" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField','cronapi.screen.changeValueOfField')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="m{]|!U.,2}E3s^~MuBbS" id="F*2Xaai@tfDc^}-|.gtT" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+            <field customattributes="" name="SELECT">vars.resultCalendar</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="m{]|!U.,2}E3s^~MuBbS" id="?h=x/a:k4JMd|X_k;QXa" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="true" colour="#8f1a36" datasourcetype="" dependencyby="m{]|!U.,2}E3s^~MuBbS" id="B-3m%:czhW/z)30ecaE2" multilayer="false" namespace="cronapi.calendar.getCalendarSelectDates" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20datas%20selecionadas%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EObt%C3%A9m%20a%20lista%20de%20datas%20selecionadas%20do%20calend%C3%A1rio.%20(Dispon%C3%ADvel%20apenas%20caso%20o%20modo%20de%20sele%C3%A7%C3%A3o%20do%20calend%C3%A1rio%20esteja%20definido%20para%20'M%C3%BAltipla')%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Id%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.calendar.getCalendarSelectDates','cronapi.calendar.getCalendarSelectDates')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.calendar.getCalendarSelectDates}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Id"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="m{]|!U.,2}E3s^~MuBbS" id="LE@g@3uUqYWmk%9,RKRB" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                <field customattributes="" name="SELECT">crn-cron-calendar-487765</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="^Xp@LaL5{WTIcuT(7p@/" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-382" y="98">
+    <mutation>
+      <arg id="06449423" name="time"/>
+    </mutation>
+    <field customattributes="" name="NAME">validateHour</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="^Xp@LaL5{WTIcuT(7p@/" id="vW(=8)hhD-4oh{QLGeHJ" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField','cronapi.screen.changeValueOfField')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="^Xp@LaL5{WTIcuT(7p@/" id="|Aif3vgs)(R~1^9@yLKt" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+            <field customattributes="" name="SELECT">vars.resultHourValue</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="^Xp@LaL5{WTIcuT(7p@/" id="?h=x/a:k4JMd|X_k;QXa" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="^Xp@LaL5{WTIcuT(7p@/" id="Ua)+eh]NmTW_SzCkh*OY" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">time</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="hsz55{_`WC{~bprw3uJ*" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-422" y="130">
+    <mutation>
+      <arg id="06449423" name="DateTime"/>
+    </mutation>
+    <field customattributes="" name="NAME">validateDateTime</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="hsz55{_`WC{~bprw3uJ*" id="7*$eKf@nZ^!)T/s0}Qs." multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField','cronapi.screen.changeValueOfField')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="hsz55{_`WC{~bprw3uJ*" id="3f.|CK8+HypRemaj]U9j" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+            <field customattributes="" name="SELECT">vars.resultValueDateHour</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="^Xp@LaL5{WTIcuT(7p@/" id="?h=x/a:k4JMd|X_k;QXa" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="hsz55{_`WC{~bprw3uJ*" id="KbC]U%@s-:Nvpf+:vr3x" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">DateTime</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-262" y="233">
+    <mutation>
+      <arg id="a55c2dc4" name="date"/>
+    </mutation>
+    <field customattributes="" name="NAME">validateDate</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="OxcH}.VSb(.!dxa+euO]" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField','cronapi.screen.changeValueOfField')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$_Ito[oE!pR!!-#24WMz" multilayer="true" namespace="cronapi.screen.fieldFromScreen" origintype="form_fieldscreen_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20nome%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20nome%20do%20campo%20(%C3%89%20necess%C3%A1rio%20associar%20o%20bloco%20ao%20formul%C3%A1rio)%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.fieldFromScreen','cronapi.screen.fieldFromScreen')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="form_fieldscreen_callreturn">
+            <field customattributes="" name="SELECT">vars.resultDateValue</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="yJfSr;w98TOc^,1@Hp5-" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="GM-HM.EVYV7~8+oA}Pd)" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">date</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>

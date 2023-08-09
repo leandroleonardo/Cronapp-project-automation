@@ -1,0 +1,439 @@
+{
+  "Ident": "StiDashboard",
+  "Name": "DashboardVehicleProduction",
+  "Guid": "11ad24abf71b439badecfa04cffb6ad5",
+  "Alias": "Vehicle Production",
+  "Brush": "solid:",
+  "Components": {
+    "0": {
+      "Ident": "StiTextElement",
+      "Name": "Text1",
+      "Guid": "189c4532abb94cd6b4424bf311e4d6fa",
+      "ClientRectangle": "0,0,1200,40",
+      "Border": ";;;;",
+      "AltTitleVisible": false,
+      "DashboardInteraction": {
+        "Ident": "Text",
+        "OnHover": "ShowToolTip",
+        "OnClick": "OpenHyperlink",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">Vehicle Production</text-align></font>",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;",
+      "Title": {
+        "Text": "Text",
+        "Visible": false
+      }
+    },
+    "1": {
+      "Ident": "StiTextElement",
+      "Name": "Text4",
+      "Guid": "c0cd44764d6144abb747d165d457c8e8",
+      "ClientRectangle": "0,320,440,40",
+      "Margin": {
+        "Bottom": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,0,480,40",
+      "AltTitleVisible": false,
+      "DashboardInteraction": {
+        "Ident": "Text",
+        "OnHover": "ShowToolTip",
+        "OnClick": "OpenHyperlink",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Text": "<font face=\"Segoe UI\" size=\"16\"><text-align=\"Center\">Vehicle Production 2010 - 2019</text-align></font>",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;",
+      "Title": {
+        "Text": "Text",
+        "Visible": false
+      }
+    },
+    "2": {
+      "Ident": "StiTableElement",
+      "Name": "TableAuto",
+      "Guid": "362bb323845341eaa71725af40b09c5b",
+      "ClientRectangle": "0,360,440,240",
+      "Margin": {
+        "Top": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,40,480,220",
+      "AltTitleVisible": false,
+      "Columns": {
+        "0": {
+          "Ident": "DimensionColumn",
+          "Key": "3db8e54ecb6f482a9e95f35b9ded17da",
+          "Expression": "Auto.Country",
+          "DashboardInteraction": {
+            "Ident": "TableColumn",
+            "OnHover": "None",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Size": {
+            "MinWidth": 30,
+            "MaxWidth": 300
+          }
+        },
+        "1": {
+          "Ident": "DataBarsColumn",
+          "Key": "35f4362b04fb4257a4d05c0ac7f7de5a",
+          "Expression": "First(Auto.Year2015 - Auto.Year2010)",
+          "Label": "Increase in 2015",
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "ShowTotalSummary": true,
+          "SummaryType": "Average",
+          "DashboardInteraction": {
+            "Ident": "TableColumn",
+            "OnHover": "None",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "HorAlignment": "Left"
+        },
+        "2": {
+          "Ident": "DataBarsColumn",
+          "Key": "0015c13388094517ab96a7aebb3de76b",
+          "Expression": "First(Auto.Year2019 - Auto.Year2015)",
+          "Label": "Increase in 2019",
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "ShowTotalSummary": true,
+          "SummaryType": "Average",
+          "DashboardInteraction": {
+            "Ident": "TableColumn",
+            "OnHover": "None",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          },
+          "HorAlignment": "Right"
+        }
+      },
+      "HeaderFont": ";10;;",
+      "FooterFont": ";10;;",
+      "Title": {
+        "Text": "Vehicle Production",
+        "Visible": false,
+        "Font": "Segoe UI;15.75;;",
+        "HorAlignment": "Center"
+      },
+      "DashboardInteraction": {
+        "Ident": "Table",
+        "OnHover": "ShowToolTip",
+        "OnClick": "ApplyFilter",
+        "HyperlinkDestination": "NewTab",
+        "FullRowSelect": true
+      },
+      "SizeMode": "Fit",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;"
+    },
+    "3": {
+      "Ident": "StiTextElement",
+      "Name": "Text5",
+      "Guid": "62ed12801e7d4ae8ba5482f2398ed648",
+      "ClientRectangle": "440,320,760,40",
+      "Margin": {
+        "Bottom": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,260,480,40",
+      "AltTitleVisible": false,
+      "DashboardInteraction": {
+        "Ident": "Text",
+        "OnHover": "ShowToolTip",
+        "OnClick": "OpenHyperlink",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Text": "<font face=\"Segoe UI\" size=\"16\"><text-align=\"Center\">Vehicle Production by Country</text-align></font>",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;",
+      "Title": {
+        "Text": "Text",
+        "Visible": false
+      }
+    },
+    "4": {
+      "Ident": "StiChartElement",
+      "Name": "Chart1",
+      "Guid": "f38800da6f554e6c87767dbbbe056fd5",
+      "ClientRectangle": "440,360,760,240",
+      "Margin": {
+        "Top": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,300,480,220",
+      "AltTitleVisible": false,
+      "Values": {
+        "0": {
+          "Ident": "ValueChartMeter",
+          "Key": "fb26a87475cc49a5bf9d5bf5adce8714",
+          "Expression": "Sum(Auto.Year2010)",
+          "Label": "Year 2010",
+          "SeriesType": "FullStackedSplineArea"
+        },
+        "1": {
+          "Ident": "ValueChartMeter",
+          "Key": "e4b130c86ef941af8039edd974239dc2",
+          "Expression": "Sum(Auto.Year2015)",
+          "Label": "Year 2015",
+          "SeriesType": "FullStackedSplineArea"
+        },
+        "2": {
+          "Ident": "ValueChartMeter",
+          "Key": "6c17291ee9934fe3bebead300e2f0c03",
+          "Expression": "Sum(Auto.Year2019)",
+          "Label": "Year 2019",
+          "SeriesType": "FullStackedSplineArea"
+        }
+      },
+      "Arguments": {
+        "0": {
+          "Ident": "ArgumentChartMeter",
+          "Key": "b5359493c1d74ae28a5394b61ac0825c",
+          "Expression": "Auto.Country"
+        }
+      },
+      "DashboardInteraction": {
+        "Ident": "Chart",
+        "OnHover": "ShowToolTip",
+        "OnClick": "ApplyFilter",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Title": {
+        "Text": "Vehicle Production by Country",
+        "Visible": false,
+        "Font": "Segoe UI;15.75;;",
+        "HorAlignment": "Center"
+      },
+      "ManuallyEnteredChartMeter": {
+        "Ident": "ValueChartMeter",
+        "Key": "1084bfdde6d8f237111237cf2ff24c0d"
+      },
+      "ArgumentFormat": {
+        "Ident": "StiGeneralFormatService"
+      },
+      "ValueFormat": {
+        "Ident": "StiNumberFormatService",
+        "NegativePattern": 1,
+        "DecimalDigits": 0,
+        "GroupSeparator": ",",
+        "State": "DecimalDigits"
+      },
+      "XAxis": {
+        "Title": {
+          "Visible": false
+        }
+      },
+      "YAxis": {
+        "Title": {
+          "Visible": false
+        }
+      },
+      "Area": {
+        "GridLinesHor": {
+          "Color": "Transparent"
+        },
+        "GridLinesVert": {
+          "Color": "Transparent"
+        },
+        "InterlacingHor": {
+          "Color": "Transparent"
+        },
+        "InterlacingVert": {
+          "Color": "Transparent"
+        }
+      },
+      "Labels": {
+        "Position": "None"
+      },
+      "Options3D": {
+        "Opacity": 1,
+        "Lighting": "Gradient"
+      },
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;"
+    },
+    "5": {
+      "Ident": "StiTextElement",
+      "Name": "Text3",
+      "Guid": "573a382ddc494bb2af5c1270dbe37efb",
+      "ClientRectangle": "440,40,760,40",
+      "Margin": {
+        "Bottom": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,520,480,40",
+      "AltTitleVisible": false,
+      "DashboardInteraction": {
+        "Ident": "Text",
+        "OnHover": "ShowToolTip",
+        "OnClick": "OpenHyperlink",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Text": "<font face=\"Segoe UI\" size=\"16\"><text-align=\"Center\">Vehicle Production Globally</text-align></font>",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;",
+      "Title": {
+        "Text": "Text",
+        "Visible": false
+      }
+    },
+    "6": {
+      "Ident": "StiRegionMapElement",
+      "Name": "RegionMap1",
+      "Guid": "a66d5995c855435fa6412a94326409e1",
+      "ClientRectangle": "440,80,760,240",
+      "Margin": {
+        "Top": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,560,480,220",
+      "AltTitleVisible": false,
+      "DashboardInteraction": {
+        "Ident": "RegionMap",
+        "OnHover": "ShowToolTip",
+        "OnClick": "ApplyFilter",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Title": {
+        "Text": "Vehicle Production Globally",
+        "Visible": false,
+        "Font": "Segoe UI;15.75;;",
+        "HorAlignment": "Center"
+      },
+      "KeyMeter": {
+        "Ident": "KeyMapMeter",
+        "Key": "b85b2d16aa9547479670726e78f0d691",
+        "Expression": "Auto.Country"
+      },
+      "ValueMeter": {
+        "Ident": "ValueMapMeter",
+        "Key": "b1ef691bfe7447ea89b43033ff161b8c",
+        "Expression": "Auto.Year2019",
+        "Label": "Year 2019"
+      },
+      "DataFrom": "DataColumns",
+      "MapType": "Heatmap",
+      "MapIdent": "World",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;"
+    },
+    "7": {
+      "Ident": "StiTextElement",
+      "Name": "Text2",
+      "Guid": "25ae2ca07c0c4acf8fba53bddb269c8e",
+      "ClientRectangle": "0,40,440,40",
+      "Margin": {
+        "Bottom": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,780,480,40",
+      "AltTitleVisible": false,
+      "DashboardInteraction": {
+        "Ident": "Text",
+        "OnHover": "ShowToolTip",
+        "OnClick": "OpenHyperlink",
+        "HyperlinkDestination": "NewTab"
+      },
+      "Text": "<font face=\"Segoe UI\" size=\"16\"><text-align=\"Center\">Growth by Country</text-align></font>",
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;",
+      "Title": {
+        "Text": "Text",
+        "Visible": false
+      }
+    },
+    "8": {
+      "Ident": "StiIndicatorElement",
+      "Name": "Indicator1",
+      "Guid": "0acd2236ebaa4d0cac7c76a8f1292bc4",
+      "ClientRectangle": "0,80,440,240",
+      "Margin": {
+        "Top": 0
+      },
+      "Border": ";;;;",
+      "AltClientRectangle": "0,820,480,240",
+      "AltTitleVisible": false,
+      "TextFormat": {
+        "Ident": "StiNumberFormatService",
+        "NegativePattern": 1,
+        "GroupSeparator": ",",
+        "State": "DecimalDigits, Abbreviation"
+      },
+      "Value": {
+        "Ident": "ValueIndicatorMeter",
+        "Key": "cae2b91419084eddb5cedb6e4d2abcb3",
+        "Expression": "Sum(Auto.Year2019)",
+        "Label": "Year 2019"
+      },
+      "Target": {
+        "Ident": "TargetIndicatorMeter",
+        "Key": "76727ac346034da483ceff8ec887318a",
+        "Expression": "Sum(Auto.Year2015)",
+        "Label": "Year 2015"
+      },
+      "Series": {
+        "Ident": "SeriesIndicatorMeter",
+        "Key": "c8fac7e7bb5046b2a755aa3a9bcb0b16",
+        "Expression": "Auto.Country"
+      },
+      "Title": {
+        "Text": "Indicator",
+        "Visible": false
+      },
+      "Font": ";13;;",
+      "Icon": "StarHalf",
+      "IndicatorConditions": {
+        "0": {
+          "Ident": "StiIndicatorElementCondition",
+          "Condition": "GreaterThan",
+          "Value": "10000000",
+          "Permissions": "TextColor",
+          "TextColor": "Teal"
+        },
+        "1": {
+          "Ident": "StiIndicatorElementCondition",
+          "Condition": "LessThanOrEqualTo",
+          "Value": "100000",
+          "Permissions": "TextColor",
+          "TextColor": "192,0,0"
+        },
+        "2": {
+          "Ident": "StiIndicatorElementCondition",
+          "Condition": "LessThan",
+          "Value": "1000000",
+          "Permissions": "TextColor",
+          "TextColor": "Olive"
+        }
+      },
+      "CornerRadius": "0, 0, 0, 0",
+      "Shadow": ";;;",
+      "DashboardInteraction": {
+        "Ident": "Indicator",
+        "OnHover": "ShowToolTip",
+        "OnClick": "None",
+        "HyperlinkDestination": "NewTab"
+      }
+    }
+  },
+  "ReportUnit": {
+    "Ident": "StiHundredthsOfInchUnit"
+  },
+  "Border": ";;2;;;;;solid:Black",
+  "AltSize": "480,1060",
+  "ContentAlignment": "StretchX",
+  "AltContentAlignment": "StretchX"
+}
