@@ -1,6 +1,6 @@
 # Introdução
 
-Esta é uma aplicação criada com o CronApp IDE.
+O **Projeto Padrão** é uma aplicação que apresenta uma variedade de componentes interativos e foi desenvolvida especificamente para a realização de testes automatizados.
 
 ## Pré-Requisitos
 
